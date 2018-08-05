@@ -10,6 +10,7 @@ Later, the boss would like to add ApplePay, and Google Wallet.
 In fact he would like the payment module to easily accommodate any payment method, even those not yet invented!
 
 Learning Outcomes
+
 •Can use and understand delegation
 
 •Can understand protocols
@@ -17,6 +18,7 @@ Learning Outcomes
 •Can understand polymorphism
 
 The Goal
+
 •To create a command line app called Payments that models an on-line payment module
 
 •The app will generate a random dollar value that simulates an online purchase and will display this to the user
