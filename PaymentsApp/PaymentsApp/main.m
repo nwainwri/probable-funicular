@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "PaymentGateway.h"
+#import "PaypalPaymentService.h"
+#import "StripePaymentService.h"
+#import "AmazonPaymentService.h"
+
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         NSString *prompt = [[NSString alloc] init];
-        NSUInteger rand = arc4random_uniform(900) + 100;
+        NSUInteger dollaDolla = arc4random_uniform(900) + 100;
         char inputChars[255];
         
         PaymentGateway *theMonster = [[PaymentGateway alloc] init];
@@ -26,10 +31,28 @@ int main(int argc, const char * argv[]) {
         NSString *finalInputString = [inputwithEnter stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
         
         int userNumber = [finalInputString intValue];
+    
+        //NSLog(@"ENTERED: %d", userNumber);
         
-        NSLog(@"ENTERED: %d", userNumber);
+        switch (userNumber) {
+            case 1:
+                //Paypal
+                break;
+                
+            case 2:
+                //Stripe
+                break;
+                
+            case 3:
+                //Amazon
+                break;
+                
+            default:
+                break;
+        }
         
-        [theMonster processPaymentAmount:(rand)];
+        [theMonster processPaymentAmount:dollaDolla];
+        
         
         
         

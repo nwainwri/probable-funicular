@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PaymentGateway.h"
+
+@class PaymentGateway;
+@protocol paymentDelegate <NSObject>
+@end
 
 @interface AmazonPaymentService : NSObject
 

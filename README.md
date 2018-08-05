@@ -1,13 +1,8 @@
 # probable-funicular
 
+FYI:: Programmers call this the open/closed principle. This principle states that classes "should be open for extension, but closed for modification".
+
 Assignment Summary:
-The boss wants us to build a (digital) shopping cart component for a new command line app. To allow people to shop with the widest variety of payment methods, the payment module should allow multiple payment methods.
-
-To start with, the payment module will just take Paypal, Stripe and Amazon Payments.
-
-Later, the boss would like to add ApplePay, and Google Wallet.
-
-In fact he would like the payment module to easily accommodate any payment method, even those not yet invented!
 
 Learning Outcomes
 
