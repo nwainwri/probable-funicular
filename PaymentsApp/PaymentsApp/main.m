@@ -11,6 +11,8 @@
 #import "PaypalPaymentService.h"
 #import "StripePaymentService.h"
 #import "AmazonPaymentService.h"
+#import "ApplePayService.h"
+#import "GoogleWalletService.h"
 
 
 
@@ -23,8 +25,9 @@ int main(int argc, const char * argv[]) {
         
         PaymentGateway *theMonster = [[PaymentGateway alloc] init];
         
-        NSLog(@"Thank you for shopping at Acme.com Your total today is $%lu", rand);
-        NSLog(@"Please select your payment method: 1: Paypal, 2: Stripe, 3: Amazon");
+        NSLog(@"Thank you for shopping at Acme.com Your total today is $%lu", dollaDolla);
+        NSLog(@"Please select your payment method:");
+        NSLog(@" 1: Paypal, 2: Stripe, 3: Amazon 4: ApplePay 5: Google Wallet");
         printf("%s", [prompt UTF8String]);
         fgets(inputChars, 255, stdin);
         NSString *inputwithEnter = [NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding];
@@ -35,23 +38,38 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"ENTERED: %d", userNumber);
         
         switch (userNumber) {
-            case 1:
-                //Paypal
+            case 1: {
+                PaypalPaymentService *paypal = [[PaypalPaymentService alloc]init];
+                theMonster.paymentDelegate = paypal;
                 break;
+            }
+            case 2: {
+                StripePaymentService *stripe = [[StripePaymentService alloc] init];
+                theMonster.paymentDelegate = stripe;
+                break;
+            }
+            case 3: {
+                AmazonPaymentService *amazon = [[AmazonPaymentService alloc] init];
+                theMonster.paymentDelegate = amazon;
+                break;
+            }
+            case 4: {
+                ApplePayService *apple = [[ApplePayService alloc] init];
+                theMonster.paymentDelegate = apple;
+                break;
+            }
+            case 5: {
+                GoogleWalletService *google = [[GoogleWalletService alloc] init];
+                theMonster.paymentDelegate = google;
+                break;
+            }
                 
-            case 2:
-                //Stripe
-                break;
-                
-            case 3:
-                //Amazon
-                break;
                 
             default:
                 break;
         }
         
-        [theMonster processPaymentAmount:dollaDolla];
+        [theMonster processPaymentAmount: dollaDolla];
         
         
         

@@ -1,5 +1,5 @@
 //
-//  PaypalPaymentService.h
+//  GoogleWalletService.h
 //  PaymentsApp
 //
 //  Created by Nathan Wainwright on 2018-08-04.
@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PaymentGateway.h"
+#import "PaypalPaymentService.h"
 
-@interface PaypalPaymentService : NSObject <paymentDelegate>
-
-
+@interface GoogleWalletService : NSObject <paymentDelegate>
 
 @end

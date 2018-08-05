@@ -10,4 +10,18 @@
 
 @implementation AmazonPaymentService
 
+- (void)processPaymentAmount:(int)atput {
+    NSLog(@"Amazon Payment System Has Processed Amount: %d", atput);
+}
+
+- (BOOL)canProcessPayment {
+    int rando = arc4random_uniform(2);
+    if (rando == 1) {
+        return YES;
+    } else {
+        return NO;
+    }
+    
+}
+
 @end

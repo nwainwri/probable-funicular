@@ -1,5 +1,5 @@
 //
-//  PaypalPaymentService.h
+//  ApplePay.h
 //  PaymentsApp
 //
 //  Created by Nathan Wainwright on 2018-08-04.
@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "PaymentGateway.h"
 
-@interface PaypalPaymentService : NSObject <paymentDelegate>
-
+@interface ApplePayService : NSObject <paymentDelegate>
 
 
 @end

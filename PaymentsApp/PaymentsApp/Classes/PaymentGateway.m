@@ -11,7 +11,14 @@
 @implementation PaymentGateway
 
 - (void)processPaymentAmount:(int)inPut{
-
+    if ([self.paymentDelegate canProcessPayment]) {
+        [self.paymentDelegate processPaymentAmount:inPut];
+    } else {
+        NSLog(@"PAYMENT DENIED");
+    }
+    
 }
+
+
 
 @end

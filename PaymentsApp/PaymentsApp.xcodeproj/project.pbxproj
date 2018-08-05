@@ -12,6 +12,8 @@
 		F19F038A2116C2C8001E7617 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F03892116C2C8001E7617 /* PaypalPaymentService.m */; };
 		F19F038D2116C2D0001E7617 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F038C2116C2D0001E7617 /* StripePaymentService.m */; };
 		F19F03912116C2F1001E7617 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F03902116C2F1001E7617 /* AmazonPaymentService.m */; };
+		F19F03942116D2CD001E7617 /* ApplePayService.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F03932116D2CD001E7617 /* ApplePayService.m */; };
+		F19F03972116D3AE001E7617 /* GoogleWalletService.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F03962116D3AE001E7617 /* GoogleWalletService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		F19F038C2116C2D0001E7617 /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
 		F19F038F2116C2F1001E7617 /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
 		F19F03902116C2F1001E7617 /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		F19F03922116D2CD001E7617 /* ApplePayService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePayService.h; sourceTree = "<group>"; };
+		F19F03932116D2CD001E7617 /* ApplePayService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayService.m; sourceTree = "<group>"; };
+		F19F03952116D3AE001E7617 /* GoogleWalletService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleWalletService.h; sourceTree = "<group>"; };
+		F19F03962116D3AE001E7617 /* GoogleWalletService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleWalletService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				F19F038C2116C2D0001E7617 /* StripePaymentService.m */,
 				F19F038F2116C2F1001E7617 /* AmazonPaymentService.h */,
 				F19F03902116C2F1001E7617 /* AmazonPaymentService.m */,
+				F19F03922116D2CD001E7617 /* ApplePayService.h */,
+				F19F03932116D2CD001E7617 /* ApplePayService.m */,
+				F19F03952116D3AE001E7617 /* GoogleWalletService.h */,
+				F19F03962116D3AE001E7617 /* GoogleWalletService.m */,
 			);
 			path = PaymentClasses;
 			sourceTree = "<group>";
@@ -157,6 +167,8 @@
 				F19F037D2116BE33001E7617 /* main.m in Sources */,
 				F19F03912116C2F1001E7617 /* AmazonPaymentService.m in Sources */,
 				F19F03862116C133001E7617 /* PaymentGateway.m in Sources */,
+				F19F03942116D2CD001E7617 /* ApplePayService.m in Sources */,
+				F19F03972116D3AE001E7617 /* GoogleWalletService.m in Sources */,
 				F19F038A2116C2C8001E7617 /* PaypalPaymentService.m in Sources */,
 				F19F038D2116C2D0001E7617 /* StripePaymentService.m in Sources */,
 			);
